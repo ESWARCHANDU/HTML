@@ -1,0 +1,19 @@
+p {
+    color: blueviolet;
+    font-family: italic;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color:darkblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    text-decoration: underline;
+    background-color:yellow;
+}
+
+.dp{
+    width: 300px;
+    height: 200px;
+}

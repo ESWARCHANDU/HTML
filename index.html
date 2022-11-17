@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HOME PAGE</title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+
+        <a href="index.html">HOME PAGE</a>
+        <br/>
+        <br/>
+
+        <a href="about.html">ABOUT US</a>
+        <br/>
+        <br/>
+
+        <a href="contacts.html">CONTACT US </a>
+        <br/>
+        <div class="container">
+        <h1 id="title">MY NEW WEBSITE</h1>
+        <p id="targettag">
+            HTML is the standard markup language for Web pages.
+
+            With HTML you can create your own Website.
+            
+            HTML is easy to learn - You will enjoy it!
+        </p>
+        <p id="targetTag">
+            Track your progress with the free "My Learning" program here at W3Schools.
+
+            Log in to your account, and start earning points!
+            
+            This is an optional feature. You can study W3Schools without using My Learning.
+        </p>
+
+        <a href="https://www.html.com">HTML WEBSITE LINK</a>
+        <br/>
+        <br/>
+
+
+        <button type="button" class="btn btn-primary" onclick="buttonClicked()">CLICK ME</button>
+        <br/>
+        <br/>
+        <button type="button" class="btn btn-success" onclick="buttonToChangeTextClicked()">CLICK ME TO CHANGE TEXT</button>
+        <br/>
+        <br/>
+        <button type="button" class="btn btn-danger"onclick="htmltextChange()">CLICK ME TO CHANGE HTML TEXT</button>
+        <br/>
+        <br/>
+        <button type="button" class="btn btn-info" id="hideTitleBtn">CLICK ME TO HIDE TITLE</button>
+        </div>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <script src="jquery.js"></script> 
+        <script src="script.js"></script>
+
+        <script>
+        $(document).ready(function(){
+            $('#hideTitleBtn').click(function(){
+                $('#title').toggle();
+                $('P').text('THIS IS JQUERY TEXT');
+
+            });
+
+        });
+        </script>
+
+    </body>
+</html>
